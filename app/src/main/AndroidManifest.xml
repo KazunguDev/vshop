@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="DayToday"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Vshop">
+        <activity
+            android:name=".OrderActivity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="fullSensor"/>
+        <activity
+            android:name=".CartActivity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".PaymentActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".AddAddressActivity"
+            android:label="@string/title_activity_add_address"
+            android:parentActivityName=".AddressActivity"
+            android:theme="@style/Theme.Vshop.NoActionBar" />
+        <activity
+            android:name=".AddressActivity"
+            android:parentActivityName=".DetailActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".DetailActivity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ItemsActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="fullSensor" />
+        <activity android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="fullSensor" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_Z4gMCjzmEUYn8m" />
+    </application>
+
+</manifest>
